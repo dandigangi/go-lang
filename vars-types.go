@@ -9,6 +9,8 @@ var (
 	d    bool
 )
 
+const derp = "Ralfie Da Pug"
+
 func main() {
 	// Can use block scope to overwrite previously defined vars at package(?) level
 	var a int = 5
@@ -28,4 +30,8 @@ func main() {
 	mno := 5.2513461 + 0.3i
 
 	fmt.Printf("mno type is %T\n", mno) // Incl. string interpolation
+
+	// Constants
+	const derp2 = "Ralfie De Puggle"
+	fmt.Println(derp, "\n", derp2)
 }
